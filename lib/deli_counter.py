@@ -7,7 +7,11 @@ def line(deli_line):
     else: 
         ret_str = "The line is currently:"
         for i in range(0, len(deli_line)):
-            ret_str += f' {i + 1}. {deli_line[i]}'
+            print(ret_str)
+            # ret_str += f' {i + 1}. {deli_line[i]}'
+            person_position = i + 1
+            current_person = deli_line[i]
+            ret_str = ret_str + f' {person_position}. {current_person}'
         print(ret_str)
 
 def take_a_number(deli_line, person):
@@ -25,4 +29,4 @@ def now_serving(deli_line):
         #Currently serving Logan.
         print(f'Currently serving {deli_line.pop(0)}.')
 
-# ipdb.set_trace()
+ipdb.set_trace()
