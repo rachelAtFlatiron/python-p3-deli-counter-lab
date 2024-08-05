@@ -29,4 +29,3 @@ def now_serving(deli_line):
         #Currently serving Logan.
         print(f'Currently serving {deli_line.pop(0)}.')
 
-ipdb.set_trace()
